@@ -3,6 +3,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
 import Cart from "./Cart";
+import MobileNav from "./MobileNav";
 
 const Navbar = async () => {
   const user = null;
@@ -14,10 +15,11 @@ const Navbar = async () => {
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
               {/* TODO: MOBILE NAV */}
+              <MobileNav />
 
               <div className="ml-4 flex lg:ml-0">
                 <Link href="/">
-                  <span className="font-bold text-3xl tracking-wider">
+                  <span className="font-bold text-xl tracking-wider">
                     AssetsFlow
                   </span>
                 </Link>
